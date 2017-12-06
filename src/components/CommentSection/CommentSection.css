@@ -5,3 +5,13 @@
 .comment__input {
   width: 100%;
 }
+
+.comment-box {
+  border: 1px solid #e6e6e6;
+  backgound-color: #fff;
+}
+
+.comment-box__likes {
+  font-size: 125%;
+  font-weight: bold;
+}

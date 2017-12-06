@@ -4,7 +4,7 @@
 }
 
 .post__comment-box {
-  border: 1px solid #eeeeee;
+  border: 1px solid #e6e6e6;
 }
 
 .post__comment-box__likes {
@@ -13,8 +13,9 @@
 }
 
 .post__header {
-  border: 1px solid #eeeeee;
+  border: 1px solid #e6e6e6;
   padding: 10px 0;
+  background-color: #fff;
 } 
 
 img.post__user-avatar {

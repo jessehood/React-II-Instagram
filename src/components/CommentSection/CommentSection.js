@@ -23,8 +23,8 @@ class CommentSection extends Component {
       <div className="post__comment-box">
         <Glyphicon glyph="glyphicon glyphicon-heart icon--med" />
         <Glyphicon glyph="glyphicon glyphicon-comment icon--med" />
-        <div className="post__comment-box__likes">{this.state.likes} likes</div>
-        <div className="post__comment-box__comments">
+        <div className="comment-box__likes">{this.state.likes} likes</div>
+        <div className="comment-box__comments">
           {this.state.comments.map((comment, index) => {
             return (
             <div key={index}>

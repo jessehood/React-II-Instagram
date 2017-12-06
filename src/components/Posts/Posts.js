@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import PostContainer from "../PostContainer/PostContainer";
 import dummyData from "../../dummy-data";
-
+import './Posts.css';
 class Posts extends Component {
   constructor() {
     super();
@@ -13,7 +13,7 @@ class Posts extends Component {
 
   render() {
     return (
-      <div>
+      <div className="posts">
         {this.state.data.map((post, index) => {
           return <PostContainer key={index} post={post} />;
         })}

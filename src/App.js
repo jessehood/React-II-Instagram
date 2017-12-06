@@ -7,7 +7,7 @@ import Posts from './components/Posts/Posts';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <SearchBar />
         <Posts />
       </div>
