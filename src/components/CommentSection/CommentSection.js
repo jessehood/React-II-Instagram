@@ -25,7 +25,7 @@ class CommentSection extends Component {
   }
 
   focusCommentInput = (event) => {
-    document.querySelector('.Comment__input').focus();
+    event.target.parentElement.querySelector('input').focus();
   }
 
   render() {
