@@ -13,18 +13,19 @@ import "./SearchBar.css";
 class SearchBar extends Component {
   constructor() {
     super();
-    this.state = {
-      search: ""
-    };
   }
 
   handleChange = event => {
-    this.setState({ search: event.target.value });
+    this.onSearch(event.target.value);
   };
 
   handleSubmit = event => {
     event.preventDefault();
   };
+
+  onSearch(query) {
+    this.props.onSearch(query);
+  }
 
   render() {
     return (
@@ -47,7 +48,6 @@ class SearchBar extends Component {
               <NavItem eventKey={1} href="#">
                 <div className="Searchbox">
                   <input
-                    value={this.state.search}
                     onChange={this.handleChange}
                     placeholder="Search..."
                   />

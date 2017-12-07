@@ -7,7 +7,8 @@ class CommentSection extends Component {
     super();
     this.state = {
       likes: 0,
-      comments: []
+      comments: [],
+      isLiked: false
     };
   }
 
@@ -15,6 +16,15 @@ class CommentSection extends Component {
     this.setState({
       likes: this.props.likes,
       comments: this.props.comments
+    });
+  }
+
+  toggleLike = (event) => {
+    this.setRedHeart(event);
+    let newLikes = (this.state.isLiked ? this.state.likes - 1 : this.state.likes + 1);
+    this.setState({
+      isLiked: !this.state.isLiked,
+      likes: newLikes
     });
   }
 
@@ -33,7 +43,7 @@ class CommentSection extends Component {
       <div className="Comment-box">
         <Glyphicon
           glyph="glyphicon glyphicon-heart icon--med red"
-          onClick={this.setRedHeart}
+          onClick={this.toggleLike}
         />
         <Glyphicon 
           glyph="glyphicon glyphicon-comment icon--med"
