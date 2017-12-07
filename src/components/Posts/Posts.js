@@ -13,7 +13,7 @@ class Posts extends Component {
 
   render() {
     return (
-      <div className="posts">
+      <div className="Posts">
         {this.state.data.map((post, index) => {
           return <PostContainer key={index} post={post} />;
         })}
