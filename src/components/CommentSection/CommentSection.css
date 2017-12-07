@@ -1,17 +1,21 @@
-.comment__username {
+.Comment__username {
   font-weight: bold;
 }
 
-.comment__input {
+.Comment__input {
   width: 100%;
+  background-color: #fff;
+  border: none;
+  margin-top: 5px;
+  font-size: 110%;
 }
 
-.comment-box {
+.Comment-box {
   border: 1px solid #e6e6e6;
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
-.comment-box__likes {
+.Comment-box__likes {
   font-size: 125%;
   font-weight: bold;
 }

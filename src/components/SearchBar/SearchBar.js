@@ -28,7 +28,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div className="navbar">
+      <div className="Navbar">
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
@@ -45,7 +45,7 @@ class SearchBar extends Component {
           <Navbar.Collapse>
             <Nav>
               <NavItem eventKey={1} href="#">
-                <div className="searchbox">
+                <div className="Searchbox">
                   <input
                     value={this.state.search}
                     onChange={this.handleChange}

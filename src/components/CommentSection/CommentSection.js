@@ -18,22 +18,38 @@ class CommentSection extends Component {
     });
   }
 
+  setRedHeart = (event) => {
+    event.target.style.color = (
+      event.target.style.color !== 'red' ? 'red' : 'grey'
+    );
+  }
+
+  focusCommentInput = (event) => {
+    document.querySelector('.Comment__input').focus();
+  }
+
   render() {
     return (
-      <div className="comment-box">
-        <Glyphicon glyph="glyphicon glyphicon-heart icon--med" />
-        <Glyphicon glyph="glyphicon glyphicon-comment icon--med" />
-        <div className="comment-box__likes">{this.state.likes} likes</div>
-        <div className="comment-box__comments">zs
+      <div className="Comment-box">
+        <Glyphicon
+          glyph="glyphicon glyphicon-heart icon--med red"
+          onClick={this.setRedHeart}
+        />
+        <Glyphicon 
+          glyph="glyphicon glyphicon-comment icon--med"
+          onClick={this.focusCommentInput}
+        />
+        <div className="Comment-box__likes">{this.state.likes} likes</div>
+        <div className="Comment-box__comments">
           {this.state.comments.map((comment, index) => {
             return (
             <div key={index}>
-              <span className="comment__username">{comment.username}</span> {comment.text}
+              <span className="Comment__username">{comment.username}</span> {comment.text}
             </div>
           );
           })}
           <div>
-            <input className="comment__input" placeholder="Add a comment..." />
+            <input className="Comment__input" placeholder="Add a comment..." />
           </div>
         </div>
       </div>

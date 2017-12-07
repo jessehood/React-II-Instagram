@@ -1,21 +1,21 @@
-.post {
+.Post {
   width:50vw;
   margin-bottom: 10px;
 }
 
-.post__header {
+.Post__header {
   border: 1px solid #e6e6e6;
   padding: 10px 0;
   background-color: #fff;
 } 
 
-img.post__user-avatar {
+img.Post__user-avatar {
   border-radius: 50%;
   height: 32px;
   margin-right: 10px;
 }
 
-img.post__image {
+img.Post__image {
   width: 50vw;
 }
 

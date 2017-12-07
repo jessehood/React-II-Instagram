@@ -22,13 +22,13 @@ class PostContainer extends Component {
 
   render() {
     return (
-      <div className="post">
-        <div className="post__header">
-          <img className="post__user-avatar" src={this.state.thumbnailUrl} />
+      <div className="Post">
+        <div className="Post__header">
+          <img className="Post__user-avatar" src={this.state.thumbnailUrl} />
           {this.state.username}
         </div>
-        <div className="post__image">
-          <img className="post__image" src={this.state.imageUrl} />
+        <div className="Post__image">
+          <img className="Post__image" src={this.state.imageUrl} />
         </div>
         <CommentsSecion
           likes={this.state.likes}
